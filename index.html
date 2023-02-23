@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Editor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <canvas id="paint"></canvas>
+    <div id="panel" class="drag-parent">
+        <div class="sizes">
+            <div data-label="1" class="size-1 active" onclick="changeSize(1)"><span>1</span></div>
+            <div data-label="10" class="size-10" onclick="changeSize(10)"><span>10</span></div>
+            <div data-label="25" class="size-25" onclick="changeSize(25)"><span>25</span></div>
+            <div data-label="35" class="size-35" onclick="changeSize(35)"><span>35</span></div>
+            <div data-label="50" class="size-50" onclick="changeSize(50)"><span>50</span></div>
+        </div>
+        <div class="colors">
+            <div data-label="black" class="black active" title="negro" onclick="changeColor('black')"><span>black</span></div>
+            <div data-label="white" class="white" title="blanco" onclick="changeColor('white')"><span>white</span></div>
+            <div data-label="red" class="red" title="rojo" onclick="changeColor('red')"><span>red</span></div>
+            <div data-label="green" class="green" title="verde" onclick="changeColor('green')"><span>green</span></div>
+            <div data-label="blue" class="blue" title="azul" onclick="changeColor('blue')"><span>blue</span></div>
+        </div>
+        <div style="margin-top: 5px;">
+            <button id="clear">Clear</button>
+            <button id="undo">Undo</button>
+            <button id="download">Download</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
